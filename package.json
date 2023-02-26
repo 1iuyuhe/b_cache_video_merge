@@ -1,0 +1,22 @@
+{
+  "name": "b_cache_video_merge",
+  "version": "1.0.0",
+  "description": "B站缓存视频合并",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "merge": "node --experimental-wasm-threads --experimental-wasm-bulk-memory merge.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ffmpeg",
+    "bilibili"
+  ],
+  "author": "lyh",
+  "license": "MIT",
+  "dependencies": {
+    "@ffmpeg/core": "^0.11.0",
+    "@ffmpeg/ffmpeg": "^0.11.6",
+    "express": "^4.17.1"
+  }
+}
